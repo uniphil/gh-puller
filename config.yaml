@@ -3,5 +3,5 @@ listen:
     port: 8765
 
 repositories:
-    -   url: https://github.com/uniphil/blah
-        path: /home/phil/code/blahpuller
+    https://github.com/uniphil/blah:
+        path: /home/phil/Code/gh-puller/blah
