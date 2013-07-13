@@ -6,4 +6,5 @@ Werkzeug==0.9.1
 argparse==1.2.1
 gunicorn==17.5
 itsdangerous==0.22
+sh==1.08
 wsgiref==0.1.2
