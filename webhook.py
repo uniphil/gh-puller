@@ -119,7 +119,7 @@ def run_gunicorn(app, host, port):
             return app
     glapp = Glapp()
     gonfig = Config()
-    gonfig.set('bind', '{}:{}'.format(host, port))
+    gonfig.set('bind', '{}{}'.format(host, ':{}'.format(port) if port else ''))
     glapp.cfg = gonfig
     glapp.run()
 
