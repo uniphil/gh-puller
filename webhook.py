@@ -57,7 +57,7 @@ def load_config(config_file='config.yaml'):
     return (host, port), repositories
 
 
-def pull(url, path):
+def pull(url, path, remote=None):
     here = str(pwd()).strip()
     try:
         cd(path)
@@ -71,7 +71,7 @@ def pull(url, path):
         print "{} is not a git repository!".format(path)
         cd(here)
         return
-    git.pull(url, 'master')
+    git.pull(remote or url, 'master')
     git.checkout('-f')
     cd(here)
 
