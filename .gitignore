@@ -1,0 +1,9 @@
+# python compiled stuff
+*.pyc
+*.pyo
+
+# text editor backups
+*~
+
+# virtualenv
+venv/
